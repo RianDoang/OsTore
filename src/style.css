@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: black;
+  font-family: "Poppins", sans-serif;
+}
+
+section {
+  display: flex;
+  width: 100%;
+}
+
+section .sidebar {
+  width: 19%;
+  height: 100%;
+  background-color: #161616;
+  display: flex;
+  position: fixed;
+}
+
+.sidebar .container {
+  padding: 15px 15px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.sidebar .container .logo {
+  width: 100%;
+  padding: 25px 0 50px 0;
+}
+
+.logo a {
+  padding: 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.gameList {
+  height: 19vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.gameList .game {
+  background-color: transparent;
+  width: 100%;
+  padding: 9px 13px;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgb(211, 211, 211);
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.gameList .game p {
+  font-size: 15px;
+  margin-top: 2px;
+}
+
+.gameList .game.active {
+  background-color: rgb(16, 16, 16);
+}
+
+.gameList .game:hover {
+  background-color: rgb(16, 16, 16);
+  padding: 9px 13px;
+  border-radius: 5px;
+}
+
+section .main {
+  width: 78%;
+  margin: 0 0 0 auto;
+}
+
+.main .container {
+  width: 100%;
+}
+
+.main .container h2 {
+  width: 100%;
+  padding: 25px 0;
+  color: white;
+}
+
+.main .container .filter {
+  display: flex;
+  gap: 50px;
+  margin: 20px 0;
+}
+
+.filter .sortBy {
+  color: rgb(255, 255, 255, 0.8);
+  height: 30px;
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 10px;
+  gap: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+.sortBy p {
+  font-size: 14px;
+  opacity: 60%;
+  margin: 0 5px;
+}
+
+.filter .searchBar {
+  color: rgb(255, 255, 255, 0.8);
+  height: 30px;
+  display: flex;
+  align-items: center;
+  padding: 8px 10px;
+  border-radius: 10px;
+  gap: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.searchBar svg:nth-child(1) {
+  padding: 7px;
+}
+
+.searchBar input {
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+}
+
+.searchBar svg:last-child {
+  cursor: pointer;
+  padding: 7px;
+  transition: 0.2s;
+}
+
+.searchBar svg:last-child:hover {
+  cursor: pointer;
+  padding: 7px;
+  background-color: rgb(128, 128, 128, 0.1);
+  border-radius: 50px;
+}
+
+.main .container .listGame {
+  margin: 80px 0 100px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.listGame h2 {
+  color: white;
+}
+
+.listGame .container {
+  display: flex;
+  gap: 50px;
+}
+
+.listGame .container .games {
+  margin-top: 20px;
+  border: 1px solid rgb(128, 128, 128, 0.7);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  transition: 0.2s;
+}
+
+.games:hover img {
+  transform: scale(1.05);
+}
+
+.games img {
+  transition: 0.3s;
+  border-radius: 2px;
+  width: 150px;
+  height: 150px;
+  box-shadow: 0px 8px 30px 5px rgba(255, 255, 255, 0.2);
+}
+
+.games p {
+  text-align: center;
+  margin-top: 15px;
+}
